@@ -1,0 +1,40 @@
+package lpa;
+
+import java.util.Scanner;
+
+public class Atvstring14 {
+
+
+	public static void main(String[] args) {
+	Scanner ler = new Scanner(System.in);
+	
+	int v1, v2, v3;
+	int X = 0;
+	
+    System.out.println("Informe os numeros");
+    v1 = ler.nextInt();
+    
+    System.out.println("Informe os numeros");
+    v2 = ler.nextInt();
+    
+    System.out.println("Informe os numeros");
+    v3 = ler.nextInt();
+    
+    if (v1>v2 && v1>v3) {
+    	X = v1;
+	System.out.println("O maior numero e:" + X);
+    }
+    else if (v2>v1 && v2>v3) {
+    	X = v2;
+    System.out.println("O maior numero e:" + X);
+    }
+    else if (v1==v2 && v1==v3) {
+    	X = v3;
+    System.out.println("O maior numero e:" + X);
+    }
+    else {
+		X = v3;
+		System.out.println("O maior número é " + X);
+	}
+    }
+}
